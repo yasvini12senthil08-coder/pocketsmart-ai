@@ -1,0 +1,12 @@
+<!-- history.html -->
+{% extends "base.html" %}
+{% block content %}
+<h2>Recommendation History</h2>
+<ul>
+    {% for item in history %}
+    <li><strong>{{ item.type }}</strong> (Budget: ${{ item.budget }}): <br>{{ item.result[:150] }}...</li>
+    {% else %}
+    <p>No queries made yet.</p>
+    {% endfor %}
+</ul>
+{% endblock %}

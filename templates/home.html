@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Hero Section -->
+<div style="text-align: center; margin-bottom: 50px;">
+    <h1 style="font-size: 38px; font-weight: 700; color: var(--text-color); margin-bottom: 12px; letter-spacing: -0.5px;">Welcome to PocketSmart AI</h1>
+    <p style="font-size: 17px; color: var(--text-muted); max-width: 650px; margin: 0 auto; line-height: 1.6;">Your GenAI-powered, cross-platform budget and recommendation assistant for smart living, events, and style.</p>
+</div>
+
+<!-- Planners Grid Section -->
+<div style="margin-bottom: 50px;">
+    <h2 style="font-size: 22px; margin-bottom: 20px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px;">🚀 Explore Our AI Planners</h2>
+    <div class="card-grid">
+        <div class="planner-card">
+            <h3> Home Interior Planner</h3>
+            <p>Decorate rooms efficiently within your exact budget using smart IKEA & Amazon suggestions.</p>
+            <a href="/home-planner" class="btn">Start Home Planner</a>
+        </div>
+
+        <div class="planner-card">
+            <h3> Party Planner</h3>
+            <p>Plan venues, catering, and decor seamlessly with integrated budget tracking.</p>
+            <a href="/party-planner" class="btn">Start Party Planner</a>
+        </div>
+
+        <div class="planner-card">
+            <h3> Jewelry Planner</h3>
+            <p>Get AI-matched jewelry suggestions tailored to your outfit, skin tone, and occasion.</p>
+            <a href="/jewelry-planner" class="btn">Start Jewelry Planner</a>
+        </div>
+    </div>
+</div>
+
+<!-- Featured AI Recommendations Preview Section -->
+<div style="margin-bottom: 50px;">
+    <h2 style="font-size: 22px; margin-bottom: 20px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px;">✨ Sample Recommendations</h2>
+    <div class="card-grid">
+        <div class="planner-card" style="background: rgba(140, 109, 83, 0.03);">
+            <h4 style="color: var(--primary-color); margin-bottom: 8px;"> Modern Minimalist Living Room</h4>
+            <p style="font-size: 14px; margin-bottom: 10px;"><b>Budget:</b> $850 / $1000</p>
+            <p style="font-size: 14px; color: var(--text-muted);">Recommended: IKEA EKTORP Sofa ($499) + Amazon LED Floor Lamp ($45).</p>
+        </div>
+
+        <div class="planner-card" style="background: rgba(140, 109, 83, 0.03);">
+            <h4 style="color: var(--primary-color); margin-bottom: 8px;"> Weekend Birthday Bash</h4>
+            <p style="font-size: 14px; margin-bottom: 10px;"><b>Budget:</b> $300</p>
+            <p style="font-size: 14px; color: var(--text-muted);">Recommended: Rooftop Lounge Booking + Custom Catering Package.</p>
+        </div>
+
+        <div class="planner-card" style="background: rgba(140, 109, 83, 0.03);">
+            <h4 style="color: var(--primary-color); margin-bottom: 8px;"> Traditional Wedding Set</h4>
+            <p style="font-size: 14px; margin-bottom: 10px;"><b>Outfit Match:</b> Silk Saree</p>
+            <p style="font-size: 14px; color: var(--text-muted);">Recommended: Antique Gold Choker with ruby embellishments.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials Section -->
+<div style="margin-bottom: 30px;">
+    <h2 style="font-size: 22px; margin-bottom: 20px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px;">💬 What Our Users Say</h2>
+    <div class="card-grid">
+        <div class="planner-card">
+            <p style="font-style: italic; font-size: 15px; margin-bottom: 12px;">"PocketSmart AI saved me hours of planning my living room setup. The IKEA budget breakdown was spot on!"</p>
+            <p style="font-weight: 600; font-size: 14px; color: var(--primary-color);">— Priya Sharma, Bengaluru</p>
+        </div>
+
+        <div class="planner-card">
+            <p style="font-style: italic; font-size: 15px; margin-bottom: 12px;">"The jewelry recommendations matched my reception outfit better than I expected. Absolutely love the aesthetic!"</p>
+            <p style="font-weight: 600; font-size: 14px; color: var(--primary-color);">— Aishwarya Ramesh, Chennai</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

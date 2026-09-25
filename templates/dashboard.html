@@ -1,0 +1,13 @@
+<!-- dashboard.html -->
+{% extends "base.html" %}
+{% block content %}
+<h2>User Dashboard</h2>
+<p>Welcome back, <strong>{{ user }}</strong>!</p>
+<h3>Recent Activity</h3>
+<ul>
+    {% for item in history %}
+    <li>{{ item.type }} - Budget: ${{ item.budget }}</li>
+    {% endfor %}
+</ul>
+<a href="/logout"><button style="background-color: #ef4444;">Logout</button></a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Home Interior Budget Planner[cite: 1]</h2>
+<form action="/generate-home" method="POST">
+    <label>Total Budget ($):</label>
+    <input type="number" step="0.01" name="budget" required placeholder="e.g. 1500">
+    <label>Room Types (comma separated):</label>
+    <input type="text" name="rooms" required placeholder="Living Room, Bedroom">
+    <label>Specific Items & Requirements:</label>
+    <textarea name="items_description" rows="4" required placeholder="Lights, ceiling fans, sofa set..."></textarea>
+    <button type="submit">Generate AI Recommendations</button>
+</form>
+{% endblock %}

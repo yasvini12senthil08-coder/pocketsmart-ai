@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Jewelry Budget Planner[cite: 1]</h2>
+<form action="/generate-jewelry" method="POST" enctype="multipart/form-data">
+    <label>Budget ($):</label>
+    <input type="number" step="0.01" name="budget" required placeholder="e.g. 300">
+    <label>Occasion:</label>
+    <input type="text" name="occasion" required placeholder="Wedding, Reception, Casual Party">
+    <label>Style Preferences:</label>
+    <textarea name="style_preferences" rows="3" required placeholder="Gold, minimalist, diamond-studded..."></textarea>
+    <label>Upload Outfit Image (Optional for Multimodal AI Analysis):</label>
+    <input type="file" name="outfit_image" accept="image/*">
+    <button type="submit">Get Jewelry Recommendations</button>
+</form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Jewelry Recommendations (Budget: ${{ budget }})</h2>
+<div style="white-space: pre-line; background: #d6d4cf; padding: 1.5rem; border-radius: 6px; border: 1px solid #e2e8f0;">
+    {{ recommendation }}
+</div>
+<br>
+<a href="/generate-jewelry"><button>Plan Jewelry Again</button></a>
+<div class="p-8 bg-white shadow-lg rounded-xl border border-gray-200 whitespace-pre-line text-gray-800 leading-relaxed text-left font-sans">
+    {{ recommendations }}
+</div>
+{% endblock %}

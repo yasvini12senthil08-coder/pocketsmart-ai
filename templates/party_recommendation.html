@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Party Budget Recommendations (Budget: ${{ budget }})</h2>
+<div style="white-space: pre-line; background: #dedbd4; padding: 1.5rem; border-radius: 6px; border: 1px solid #c5c2ba;">
+    {{ recommendation }}
+</div>
+<br>
+<a href="/generate-party"><button>Plan Another Party</button></a>
+<div class="p-8 bg-white shadow-lg rounded-xl border border-gray-200 whitespace-pre-line text-orange-800 leading-relaxed text-left font-sans">
+    {{ recommendations }}
+</div>
+{% endblock %}

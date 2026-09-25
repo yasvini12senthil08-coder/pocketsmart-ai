@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Home Interior AI Recommendations</h2>
+    <div class="result-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin-top: 20px; white-space: pre-wrap;">
+        {{ result }}
+    </div>
+    <br>
+    <a href="/home-planner" class="btn">Back to Planner</a>
+</div>
+<div class="p-8 bg-white shadow-lg rounded-xl border border-gray-200 whitespace-pre-line text-gray-800 leading-relaxed text-left font-sans">
+    {{ recommendations }}
+</div>
+{% endblock %}
